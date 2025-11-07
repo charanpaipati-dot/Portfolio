@@ -160,7 +160,7 @@ const createBackToTop = () => {
         width: 48px;
         height: 48px;
         border-radius: 50%;
-        background: var(--accent);
+        background: var(--text-primary);
         color: white;
         border: none;
         cursor: pointer;
@@ -168,7 +168,7 @@ const createBackToTop = () => {
         visibility: hidden;
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         z-index: 999;
-        box-shadow: 0 4px 20px rgba(0, 122, 255, 0.3);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -199,12 +199,12 @@ const createBackToTop = () => {
     // Hover effect
     button.addEventListener('mouseenter', function() {
         this.style.transform = 'scale(1.08)';
-        this.style.boxShadow = '0 6px 24px rgba(0, 122, 255, 0.4)';
+        this.style.boxShadow = '0 6px 24px rgba(0, 0, 0, 0.18)';
     });
 
     button.addEventListener('mouseleave', function() {
         this.style.transform = 'scale(1)';
-        this.style.boxShadow = '0 4px 20px rgba(0, 122, 255, 0.3)';
+        this.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.12)';
     });
 };
 
@@ -345,6 +345,6 @@ window.addEventListener('resize', () => {
 });
 
 // Clean console message
-console.log('%c👋 Welcome to my portfolio!', 'color: #007AFF; font-size: 16px; font-weight: 600; font-family: Inter, sans-serif;');
-console.log('%cBuilt with HTML, CSS, and JavaScript', 'color: #666666; font-size: 13px; font-family: Inter, sans-serif;');
-console.log('%cFeel free to reach out: paipaticharan@gmail.com', 'color: #007AFF; font-size: 13px; font-family: Inter, sans-serif;');
+console.log('%c👋 Welcome to my portfolio!', 'color: #1d1d1f; font-size: 16px; font-weight: 600; font-family: Inter, sans-serif;');
+console.log('%cBuilt with HTML, CSS, and JavaScript', 'color: #86868b; font-size: 13px; font-family: Inter, sans-serif;');
+console.log('%cFeel free to reach out: paipaticharan@gmail.com', 'color: #6e6e73; font-size: 13px; font-family: Inter, sans-serif;');

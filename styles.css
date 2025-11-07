@@ -8,18 +8,19 @@
 }
 
 :root {
-    /* Apple-inspired color palette */
+    /* Apple-inspired grey and white color palette */
     --background: #ffffff;
-    --text-primary: #000000;
-    --text-secondary: #666666;
-    --accent: #007AFF;
+    --text-primary: #1d1d1f;
+    --text-secondary: #86868b;
+    --accent: #6e6e73;
     --grey-light: #f5f5f7;
-    --grey-lighter: #fbfbfd;
-    --shadow: rgba(0, 0, 0, 0.05);
-    --shadow-medium: rgba(0, 0, 0, 0.1);
-    --shadow-strong: rgba(0, 0, 0, 0.15);
-    --border-radius: 18px;
-    --border-radius-small: 12px;
+    --grey-lighter: #fafafa;
+    --grey-dark: #424245;
+    --shadow: rgba(0, 0, 0, 0.04);
+    --shadow-medium: rgba(0, 0, 0, 0.08);
+    --shadow-strong: rgba(0, 0, 0, 0.12);
+    --border-radius: 12px;
+    --border-radius-small: 8px;
     --nav-blur: blur(20px);
 }
 
@@ -215,23 +216,26 @@ body {
 }
 
 .btn-primary {
-    background: var(--accent);
+    background: var(--text-primary);
     color: white;
 }
 
 .btn-primary:hover {
     transform: scale(1.02);
-    box-shadow: 0 10px 30px rgba(0, 122, 255, 0.25);
+    box-shadow: 0 10px 30px var(--shadow-medium);
+    background: var(--grey-dark);
 }
 
 .btn-secondary {
     background: var(--grey-light);
     color: var(--text-primary);
+    border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .btn-secondary:hover {
-    background: var(--grey-lighter);
+    background: var(--background);
     transform: scale(1.02);
+    box-shadow: 0 4px 16px var(--shadow);
 }
 
 .scroll-indicator {
@@ -304,7 +308,7 @@ section {
     width: 240px;
     height: 240px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--accent) 0%, #5856D6 100%);
+    background: linear-gradient(135deg, var(--grey-dark) 0%, var(--accent) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -344,7 +348,7 @@ section {
 }
 
 .info-item i {
-    color: var(--accent);
+    color: var(--text-primary);
     font-size: 1.1rem;
     width: 20px;
 }
@@ -361,7 +365,7 @@ section {
 }
 
 .info-item a:hover {
-    color: var(--accent);
+    color: var(--text-primary);
 }
 
 /* Skills Section */
@@ -392,7 +396,7 @@ section {
     width: 56px;
     height: 56px;
     border-radius: var(--border-radius-small);
-    background: var(--accent);
+    background: var(--text-primary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -427,7 +431,7 @@ section {
     content: '•';
     position: absolute;
     left: 0;
-    color: var(--accent);
+    color: var(--text-primary);
     font-size: 1.2rem;
 }
 
@@ -494,9 +498,9 @@ section {
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    background: var(--accent);
+    background: var(--text-primary);
     border: 3px solid var(--background);
-    box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.1);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.06);
     z-index: 1;
 }
 
@@ -513,7 +517,7 @@ section {
 }
 
 .timeline-date {
-    color: var(--accent);
+    color: var(--text-secondary);
     font-weight: 600;
     margin-bottom: 0.75rem;
     font-size: 14px;
@@ -552,7 +556,7 @@ section {
     content: '•';
     position: absolute;
     left: 0;
-    color: var(--accent);
+    color: var(--text-primary);
     font-size: 1.2rem;
 }
 
@@ -582,7 +586,7 @@ section {
 
 .project-image {
     height: 220px;
-    background: linear-gradient(135deg, var(--accent) 0%, #5856D6 100%);
+    background: linear-gradient(135deg, var(--grey-dark) 0%, var(--accent) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -648,7 +652,7 @@ section {
     width: 70px;
     height: 70px;
     border-radius: var(--border-radius-small);
-    background: var(--accent);
+    background: var(--text-primary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -707,7 +711,7 @@ section {
     width: 56px;
     height: 56px;
     border-radius: var(--border-radius-small);
-    background: var(--accent);
+    background: var(--text-primary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -737,7 +741,7 @@ section {
 }
 
 .contact-item a:hover {
-    color: var(--accent);
+    color: var(--text-primary);
 }
 
 /* Footer */
@@ -770,7 +774,7 @@ section {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: var(--accent);
+    background: var(--text-primary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -781,7 +785,8 @@ section {
 
 .social-links a:hover {
     transform: scale(1.08);
-    box-shadow: 0 6px 20px rgba(0, 122, 255, 0.3);
+    box-shadow: 0 6px 20px var(--shadow-medium);
+    background: var(--grey-dark);
 }
 
 /* Animations */
